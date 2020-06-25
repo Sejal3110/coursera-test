@@ -2,36 +2,129 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>The Box Model</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<title> Web Development </title>
 <style>
-
-body {
-	margin: 0;
-  background-color: gray;
+	* {
+  box-sizing: border-box;
+  
+}
+ h1 {
+  margin-bottom: 30px;
+  color: green;
+  text-align: center;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 #box {
-  background-color: blue;
+background-color: grey;
+width:90%;
+padding:0px;
+text-align: justify;
+border: 1px solid black;
+height:340px;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+ font-family:  Arial, Helvetica, sans-serif;
+
 }
-#content {
-  background-color: #90EE90; /*green*/
+p{ float: left; 
+	padding: 10px;
+}
+h2{
+	text-align: right;
+background-color: pink;
+width: 130px;
+float: right;
+margin:0px;
+padding:0px ;
+border-left: 1px solid black; border-bottom: 1px solid black;
 }
 
-h1 {
-  margin-bottom: 30px;
+
+.container{
+	position: relative
+	
 }
+
+.row {
+  width: 100%;
+
+}
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+     width: 33.33%;
+    
+  }
+  
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    
+  }
+  
+  .col-md-6 {
+    width: 50%;
+  }
+  
+  .col-md-12 {
+    width: 100%;
+    
+
+     
+  }
+}
+
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 100%;
+  
+  }
+}
+
 
 </style>
+
 </head>
-<body>
+<body> 
 
-<h1>Box Model</h1>
+	
+		<h1> Web programming </h1>
+		<div class="container">
+<div class="row">
 
-<div id="box">
-  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+<section class="col-lg-4 col-md-6 col-sm-12" ><section id="box"><h2>HTML</h2>
+<p>HTML is at the core of every web page, regardless the complexity of a site or number of technologies involved. It's an essential skill for any web professional. It's the starting point for anyone learning how to create content for the web. And, luckily for us, it's surprisingly easy to learn.
+HTML stands for HyperText Markup Language. "Markup language" means that, rather than using a programming language to perform functions, HTML uses tags to identify different types of content and the purposes they each serve to the webpage.</p>
+</section>
+</section>
+
+<section class="col-lg-4 col-md-6 col-sm-12"><section id="box"><h2> CSS</h2>
+<p> CSS stands for Cascading Style Sheets. This programming language dictates how the HTML elements of a website should actually appear on the frontend of the page.
+HTML  provides the raw tools needed to structure content on a website. CSS, on the other hand, helps to style this content so it appears to the user the way it was intended to be seen. 
+
+</p>
+</section></section>
+<section class="col-lg-4 col-md-12 col-sm-12" ><section id="box"><h2>Javascript</h2>
+<p>JavaScript is a logic-based programming language that can be used to modify website content and make it behave in different ways in response to a user's actions. Common uses for JavaScript include confirmation boxes, calls-to-action, and adding new identities to existing information.
+In short, JavaScript is a programming language that lets web developers design interactive sites. Most of the dynamic behavior you'll see on a web page is thanks to JavaScript, which augments a browser's default controls and behaviors.
+
+</p>
+</section>
+</section>
 </div>
 
-
+</div>
 </body>
+
 </html>
 
